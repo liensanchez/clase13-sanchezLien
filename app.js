@@ -55,9 +55,12 @@ $("#registrarse").on('click',function(){
     //impedimos el envio en blanco
     if((nombre==="")&&(apellido==="")){
 
+      //agregamos mensaje de error
       $("#loginBox").append(`
                             <h2 id="mensajeError" style="display:none"> Datos no ingresados</h2>`
       );
+
+      //aparece y desaparece el mensaje de error
       $("#mensajeError").fadeIn(1000).fadeOut(1000).fadeIn(1000).fadeOut(1000);
 
     }else(console.log("registrado"))
